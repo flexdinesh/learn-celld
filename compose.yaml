@@ -1,0 +1,154 @@
+name: celld-lab
+x-celld: &celld
+  build:
+    context: .
+    dockerfile: docker/celld.Dockerfile
+  restart: "no"
+  stop_grace_period: 40s
+  labels:
+    dev.celld.lab: "true"
+  depends_on:
+    deploy:
+      condition: service_completed_successfully
+  healthcheck:
+    test:
+      ["CMD", "curl", "-fsS", "http://localhost:8080/.well-known/celld/health"]
+    interval: 3s
+    timeout: 2s
+    retries: 30
+x-celld-env: &celld-env
+  CELLD_BUCKET: s3://celld-lab
+  S3_ENDPOINT: http://minio:9000
+  AWS_ENDPOINT_URL: http://minio:9000
+  AWS_ACCESS_KEY_ID: celldlab
+  AWS_SECRET_ACCESS_KEY: celldlab-secret
+  AWS_REGION: us-east-1
+  CELLD_ADDR: 0.0.0.0:8080
+  CELLD_INTERNAL_ADDR: 0.0.0.0:8081
+  CELLD_WATCH: /data
+  CELLD_IDLE_EVICT_S: "20"
+  CELLD_PLACEMENT_WEIGHT: "1"
+  CELLD_DURABILITY: fleet
+  CELLD_MAX_RESIDENT_CELLS: "64"
+  CELLD_MAX_CELL_REQUESTS: "128"
+services:
+  minio:
+    build: { context: ., dockerfile: docker/minio.Dockerfile }
+    command: server /data --console-address :9001
+    environment:
+      MINIO_ROOT_USER: celldlab
+      MINIO_ROOT_PASSWORD: celldlab-secret
+    volumes: ["minio-data:/data"]
+    ports: ["127.0.0.1:9000:9000", "127.0.0.1:9001:9001"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 3s
+      timeout: 2s
+      retries: 30
+  minio-init:
+    build: { context: ., dockerfile: docker/app.Dockerfile, target: api }
+    environment:
+      S3_ENDPOINT: http://minio:9000
+    depends_on:
+      minio: { condition: service_healthy }
+    command:
+      ["pnpm", "--filter", "@lab/api", "exec", "tsx", "src/init-bucket.ts"]
+  deploy:
+    build: { context: ., dockerfile: docker/celld.Dockerfile }
+    environment: *celld-env
+    depends_on:
+      minio-init: { condition: service_completed_successfully }
+    command:
+      [
+        "deploy",
+        ".",
+        "--bucket",
+        "s3://celld-lab",
+        "--endpoint",
+        "http://minio:9000",
+        "--region",
+        "us-east-1",
+      ]
+  node-a:
+    <<: *celld
+    container_name: celld-lab-node-a
+    environment:
+      <<: *celld-env
+      CELLD_NODE: node-a
+      CELLD_ADVERTISE: 172.30.60.11:8081
+    networks:
+      default: {ipv4_address: 172.30.60.11}
+    command: ["--endpoint", "http://minio:9000", "--region", "us-east-1"]
+    volumes: ["node-a-data:/data"]
+    ports: ["127.0.0.1:9876:8080", "127.0.0.1:9886:8081"]
+  node-b:
+    <<: *celld
+    container_name: celld-lab-node-b
+    environment:
+      <<: *celld-env
+      CELLD_NODE: node-b
+      CELLD_ADVERTISE: 172.30.60.12:8081
+    networks:
+      default: {ipv4_address: 172.30.60.12}
+    command: ["--endpoint", "http://minio:9000", "--region", "us-east-1"]
+    volumes: ["node-b-data:/data"]
+    ports: ["127.0.0.1:9877:8080", "127.0.0.1:9887:8081"]
+  node-c:
+    <<: *celld
+    container_name: celld-lab-node-c
+    environment:
+      <<: *celld-env
+      CELLD_NODE: node-c
+      CELLD_ADVERTISE: 172.30.60.13:8081
+    networks:
+      default: {ipv4_address: 172.30.60.13}
+    command: ["--endpoint", "http://minio:9000", "--region", "us-east-1"]
+    volumes: ["node-c-data:/data"]
+    ports: ["127.0.0.1:9878:8080", "127.0.0.1:9888:8081"]
+  api:
+    build: { context: ., dockerfile: docker/app.Dockerfile, target: api }
+    environment:
+      S3_ENDPOINT: http://minio:9000
+      NODE_A_URL: http://172.30.60.11:8080
+      NODE_B_URL: http://172.30.60.12:8080
+      NODE_C_URL: http://172.30.60.13:8080
+      NODE_A_INTERNAL: http://172.30.60.11:8081
+      NODE_B_INTERNAL: http://172.30.60.12:8081
+      NODE_C_INTERNAL: http://172.30.60.13:8081
+    volumes: ["/var/run/docker.sock:/var/run/docker.sock"]
+    ports: ["127.0.0.1:3001:3001"]
+    depends_on:
+      node-a: { condition: service_healthy }
+      node-b: { condition: service_healthy }
+      node-c: { condition: service_healthy }
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://localhost:3001/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 3s
+      timeout: 2s
+      retries: 20
+  web:
+    build: { context: ., dockerfile: docker/app.Dockerfile, target: web }
+    ports: ["127.0.0.1:5173:80"]
+    depends_on:
+      api: { condition: service_healthy }
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1"]
+      interval: 3s
+      timeout: 2s
+      retries: 10
+volumes:
+  minio-data:
+  node-a-data:
+  node-b-data:
+  node-c-data:
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.30.60.0/24

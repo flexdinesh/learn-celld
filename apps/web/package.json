@@ -1,0 +1,23 @@
+{
+  "name": "@lab/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -p tsconfig.json && vite build",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@lab/contracts": "workspace:*",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.468.0",
+    "@fontsource-variable/public-sans": "^5.2.8"
+  },
+  "devDependencies": {
+    "vite": "^7.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0"
+  }
+}

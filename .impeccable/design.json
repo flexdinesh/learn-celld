@@ -1,0 +1,580 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T05:07:58.693Z",
+  "title": "Design System: celld systems lab",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.1860 260.81)",
+          "oklch(26.43% 0.1860 260.81)",
+          "oklch(37.86% 0.1860 260.81)",
+          "oklch(49.29% 0.1860 260.81)",
+          "oklch(60.71% 0.1860 260.81)",
+          "oklch(72.14% 0.1860 260.81)",
+          "oklch(83.57% 0.1860 260.81)",
+          "oklch(95.00% 0.1860 260.81)"
+        ]
+      },
+      "blue-hover": {
+        "role": "primary",
+        "displayName": "Blue Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.1453 259.39)",
+          "oklch(26.43% 0.1453 259.39)",
+          "oklch(37.86% 0.1453 259.39)",
+          "oklch(49.29% 0.1453 259.39)",
+          "oklch(60.71% 0.1453 259.39)",
+          "oklch(72.14% 0.1453 259.39)",
+          "oklch(83.57% 0.1453 259.39)",
+          "oklch(95.00% 0.1453 259.39)"
+        ]
+      },
+      "selected-bg": {
+        "role": "primary",
+        "displayName": "Selected Bg",
+        "tonalRamp": [
+          "oklch(15.00% 0.0264 257.03)",
+          "oklch(26.43% 0.0264 257.03)",
+          "oklch(37.86% 0.0264 257.03)",
+          "oklch(49.29% 0.0264 257.03)",
+          "oklch(60.71% 0.0264 257.03)",
+          "oklch(72.14% 0.0264 257.03)",
+          "oklch(83.57% 0.0264 257.03)",
+          "oklch(95.00% 0.0264 257.03)"
+        ]
+      },
+      "selected-text": {
+        "role": "primary",
+        "displayName": "Selected Text",
+        "tonalRamp": [
+          "oklch(15.00% 0.1449 259.24)",
+          "oklch(26.43% 0.1449 259.24)",
+          "oklch(37.86% 0.1449 259.24)",
+          "oklch(49.29% 0.1449 259.24)",
+          "oklch(60.71% 0.1449 259.24)",
+          "oklch(72.14% 0.1449 259.24)",
+          "oklch(83.57% 0.1449 259.24)",
+          "oklch(95.00% 0.1449 259.24)"
+        ]
+      },
+      "guided-bg": {
+        "role": "primary",
+        "displayName": "Guided Bg",
+        "tonalRamp": [
+          "oklch(15.00% 0.0195 260.17)",
+          "oklch(26.43% 0.0195 260.17)",
+          "oklch(37.86% 0.0195 260.17)",
+          "oklch(49.29% 0.0195 260.17)",
+          "oklch(60.71% 0.0195 260.17)",
+          "oklch(72.14% 0.0195 260.17)",
+          "oklch(83.57% 0.0195 260.17)",
+          "oklch(95.00% 0.0195 260.17)"
+        ]
+      },
+      "guided-text": {
+        "role": "primary",
+        "displayName": "Guided Text",
+        "tonalRamp": [
+          "oklch(15.00% 0.1423 258.43)",
+          "oklch(26.43% 0.1423 258.43)",
+          "oklch(37.86% 0.1423 258.43)",
+          "oklch(49.29% 0.1423 258.43)",
+          "oklch(60.71% 0.1423 258.43)",
+          "oklch(72.14% 0.1423 258.43)",
+          "oklch(83.57% 0.1423 258.43)",
+          "oklch(95.00% 0.1423 258.43)"
+        ]
+      },
+      "guided-hover": {
+        "role": "primary",
+        "displayName": "Guided Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.0366 259.81)",
+          "oklch(26.43% 0.0366 259.81)",
+          "oklch(37.86% 0.0366 259.81)",
+          "oklch(49.29% 0.0366 259.81)",
+          "oklch(60.71% 0.0366 259.81)",
+          "oklch(72.14% 0.0366 259.81)",
+          "oklch(83.57% 0.0366 259.81)",
+          "oklch(95.00% 0.0366 259.81)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0387 251.94)",
+          "oklch(26.43% 0.0387 251.94)",
+          "oklch(37.86% 0.0387 251.94)",
+          "oklch(49.29% 0.0387 251.94)",
+          "oklch(60.71% 0.0387 251.94)",
+          "oklch(72.14% 0.0387 251.94)",
+          "oklch(83.57% 0.0387 251.94)",
+          "oklch(95.00% 0.0387 251.94)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.0364 251.38)",
+          "oklch(26.43% 0.0364 251.38)",
+          "oklch(37.86% 0.0364 251.38)",
+          "oklch(49.29% 0.0364 251.38)",
+          "oklch(60.71% 0.0364 251.38)",
+          "oklch(72.14% 0.0364 251.38)",
+          "oklch(83.57% 0.0364 251.38)",
+          "oklch(95.00% 0.0364 251.38)"
+        ]
+      },
+      "work-surface": {
+        "role": "neutral",
+        "displayName": "Work Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0069 247.90)",
+          "oklch(26.43% 0.0069 247.90)",
+          "oklch(37.86% 0.0069 247.90)",
+          "oklch(49.29% 0.0069 247.90)",
+          "oklch(60.71% 0.0069 247.90)",
+          "oklch(72.14% 0.0069 247.90)",
+          "oklch(83.57% 0.0069 247.90)",
+          "oklch(95.00% 0.0069 247.90)"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "Rail",
+        "tonalRamp": [
+          "oklch(15.00% 0.0045 258.32)",
+          "oklch(26.43% 0.0045 258.32)",
+          "oklch(37.86% 0.0045 258.32)",
+          "oklch(49.29% 0.0045 258.32)",
+          "oklch(60.71% 0.0045 258.32)",
+          "oklch(72.14% 0.0045 258.32)",
+          "oklch(83.57% 0.0045 258.32)",
+          "oklch(95.00% 0.0045 258.32)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "tonalRamp": [
+          "oklch(15.00% 0.0000 89.88)",
+          "oklch(26.43% 0.0000 89.88)",
+          "oklch(37.86% 0.0000 89.88)",
+          "oklch(49.29% 0.0000 89.88)",
+          "oklch(60.71% 0.0000 89.88)",
+          "oklch(72.14% 0.0000 89.88)",
+          "oklch(83.57% 0.0000 89.88)",
+          "oklch(95.00% 0.0000 89.88)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15.00% 0.0139 247.98)",
+          "oklch(26.43% 0.0139 247.98)",
+          "oklch(37.86% 0.0139 247.98)",
+          "oklch(49.29% 0.0139 247.98)",
+          "oklch(60.71% 0.0139 247.98)",
+          "oklch(72.14% 0.0139 247.98)",
+          "oklch(83.57% 0.0139 247.98)",
+          "oklch(95.00% 0.0139 247.98)"
+        ]
+      },
+      "hover-surface": {
+        "role": "neutral",
+        "displayName": "Hover Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0167 250.85)",
+          "oklch(26.43% 0.0167 250.85)",
+          "oklch(37.86% 0.0167 250.85)",
+          "oklch(49.29% 0.0167 250.85)",
+          "oklch(60.71% 0.0167 250.85)",
+          "oklch(72.14% 0.0167 250.85)",
+          "oklch(83.57% 0.0167 250.85)",
+          "oklch(95.00% 0.0167 250.85)"
+        ]
+      },
+      "owner-surface": {
+        "role": "primary",
+        "displayName": "Owner Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0086 264.52)",
+          "oklch(26.43% 0.0086 264.52)",
+          "oklch(37.86% 0.0086 264.52)",
+          "oklch(49.29% 0.0086 264.52)",
+          "oklch(60.71% 0.0086 264.52)",
+          "oklch(72.14% 0.0086 264.52)",
+          "oklch(83.57% 0.0086 264.52)",
+          "oklch(95.00% 0.0086 264.52)"
+        ]
+      },
+      "storage-surface": {
+        "role": "neutral",
+        "displayName": "Storage Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0097 252.81)",
+          "oklch(26.43% 0.0097 252.81)",
+          "oklch(37.86% 0.0097 252.81)",
+          "oklch(49.29% 0.0097 252.81)",
+          "oklch(60.71% 0.0097 252.81)",
+          "oklch(72.14% 0.0097 252.81)",
+          "oklch(83.57% 0.0097 252.81)",
+          "oklch(95.00% 0.0097 252.81)"
+        ]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "Field Line",
+        "tonalRamp": [
+          "oklch(15.00% 0.0204 250.40)",
+          "oklch(26.43% 0.0204 250.40)",
+          "oklch(37.86% 0.0204 250.40)",
+          "oklch(49.29% 0.0204 250.40)",
+          "oklch(60.71% 0.0204 250.40)",
+          "oklch(72.14% 0.0204 250.40)",
+          "oklch(83.57% 0.0204 250.40)",
+          "oklch(95.00% 0.0204 250.40)"
+        ]
+      },
+      "field-ink": {
+        "role": "neutral",
+        "displayName": "Field Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0529 253.24)",
+          "oklch(26.43% 0.0529 253.24)",
+          "oklch(37.86% 0.0529 253.24)",
+          "oklch(49.29% 0.0529 253.24)",
+          "oklch(60.71% 0.0529 253.24)",
+          "oklch(72.14% 0.0529 253.24)",
+          "oklch(83.57% 0.0529 253.24)",
+          "oklch(95.00% 0.0529 253.24)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.0917 160.31)",
+          "oklch(26.43% 0.0917 160.31)",
+          "oklch(37.86% 0.0917 160.31)",
+          "oklch(49.29% 0.0917 160.31)",
+          "oklch(60.71% 0.0917 160.31)",
+          "oklch(72.14% 0.0917 160.31)",
+          "oklch(83.57% 0.0917 160.31)",
+          "oklch(95.00% 0.0917 160.31)"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Red",
+        "tonalRamp": [
+          "oklch(15.00% 0.1525 20.78)",
+          "oklch(26.43% 0.1525 20.78)",
+          "oklch(37.86% 0.1525 20.78)",
+          "oklch(49.29% 0.1525 20.78)",
+          "oklch(60.71% 0.1525 20.78)",
+          "oklch(72.14% 0.1525 20.78)",
+          "oklch(83.57% 0.1525 20.78)",
+          "oklch(95.00% 0.1525 20.78)"
+        ]
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Amber",
+        "tonalRamp": [
+          "oklch(15.00% 0.0966 74.06)",
+          "oklch(26.43% 0.0966 74.06)",
+          "oklch(37.86% 0.0966 74.06)",
+          "oklch(49.29% 0.0966 74.06)",
+          "oklch(60.71% 0.0966 74.06)",
+          "oklch(72.14% 0.0966 74.06)",
+          "oklch(83.57% 0.0966 74.06)",
+          "oklch(95.00% 0.0966 74.06)"
+        ]
+      },
+      "success-surface": {
+        "role": "secondary",
+        "displayName": "Success Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0200 164.57)",
+          "oklch(26.43% 0.0200 164.57)",
+          "oklch(37.86% 0.0200 164.57)",
+          "oklch(49.29% 0.0200 164.57)",
+          "oklch(60.71% 0.0200 164.57)",
+          "oklch(72.14% 0.0200 164.57)",
+          "oklch(83.57% 0.0200 164.57)",
+          "oklch(95.00% 0.0200 164.57)"
+        ]
+      },
+      "success-ink": {
+        "role": "secondary",
+        "displayName": "Success Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0737 160.62)",
+          "oklch(26.43% 0.0737 160.62)",
+          "oklch(37.86% 0.0737 160.62)",
+          "oklch(49.29% 0.0737 160.62)",
+          "oklch(60.71% 0.0737 160.62)",
+          "oklch(72.14% 0.0737 160.62)",
+          "oklch(83.57% 0.0737 160.62)",
+          "oklch(95.00% 0.0737 160.62)"
+        ]
+      },
+      "error-surface": {
+        "role": "secondary",
+        "displayName": "Error Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0219 14.07)",
+          "oklch(26.43% 0.0219 14.07)",
+          "oklch(37.86% 0.0219 14.07)",
+          "oklch(49.29% 0.0219 14.07)",
+          "oklch(60.71% 0.0219 14.07)",
+          "oklch(72.14% 0.0219 14.07)",
+          "oklch(83.57% 0.0219 14.07)",
+          "oklch(95.00% 0.0219 14.07)"
+        ]
+      },
+      "error-ink": {
+        "role": "secondary",
+        "displayName": "Error Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.1364 19.36)",
+          "oklch(26.43% 0.1364 19.36)",
+          "oklch(37.86% 0.1364 19.36)",
+          "oklch(49.29% 0.1364 19.36)",
+          "oklch(60.71% 0.1364 19.36)",
+          "oklch(72.14% 0.1364 19.36)",
+          "oklch(83.57% 0.1364 19.36)",
+          "oklch(95.00% 0.1364 19.36)"
+        ]
+      },
+      "badge-surface": {
+        "role": "neutral",
+        "displayName": "Badge Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.0114 252.09)",
+          "oklch(26.43% 0.0114 252.09)",
+          "oklch(37.86% 0.0114 252.09)",
+          "oklch(49.29% 0.0114 252.09)",
+          "oklch(60.71% 0.0114 252.09)",
+          "oklch(72.14% 0.0114 252.09)",
+          "oklch(83.57% 0.0114 252.09)",
+          "oklch(95.00% 0.0114 252.09)"
+        ]
+      },
+      "badge-ink": {
+        "role": "neutral",
+        "displayName": "Badge Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.0562 253.36)",
+          "oklch(26.43% 0.0562 253.36)",
+          "oklch(37.86% 0.0562 253.36)",
+          "oklch(49.29% 0.0562 253.36)",
+          "oklch(60.71% 0.0562 253.36)",
+          "oklch(72.14% 0.0562 253.36)",
+          "oklch(83.57% 0.0562 253.36)",
+          "oklch(95.00% 0.0562 253.36)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Main surface heading; adapts at phone and wide breakpoints."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Experiment titles."
+      },
+      "section": {
+        "displayName": "Section",
+        "purpose": "Apparatus and console headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Explanatory premise, bounded to 65ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Short field labels and compact controls."
+      },
+      "evidence": {
+        "displayName": "Evidence",
+        "purpose": "Payloads and technical details."
+      },
+      "measured-value": {
+        "displayName": "Measured Value",
+        "purpose": "Inspector values; a larger principal counter is a local variant."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "button-background",
+        "value": "background 0.15s ease",
+        "purpose": "Ordinary control state transitions."
+      },
+      {
+        "name": "request-flash",
+        "value": "1.4s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Latest submitted ingress; background starts #c7dcff with a 3px #91b9fb outline, then outline clears."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none; scroll-behavior: auto",
+        "purpose": "Respect prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "650px"
+      },
+      {
+        "name": "horizontal-navigation",
+        "value": "900px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1150px"
+      },
+      {
+        "name": "wide",
+        "value": "1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Request",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main request submission action.",
+      "html": "<button class=\"ds-primary ds-focus\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m22 2-7 20-4-9-9-4Z\"/><path d=\"M22 2 11 13\"/></svg>Send request</button>",
+      "css": ".ds-primary{font-family:\"Public Sans Variable\",sans-serif;border:0;border-radius:5px;cursor:pointer;transition:background .15s ease;background:var(--blue,#1859c9);color:#fff;display:flex;gap:7px;align-items:center;padding:11px 13px;font-size:10px;font-weight:600;white-space:nowrap;}.ds-primary:hover{background:#114799;}.ds-primary:disabled{cursor:wait;opacity:.5}.ds-focus:focus-visible{outline:3px solid #3479df;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Guided Experiment",
+      "kind": "button",
+      "refersTo": "button-guided",
+      "description": "A subordinate action attached to experiment instructions.",
+      "html": "<button class=\"ds-guided ds-focus\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 3 14 9-14 9V3z\"/></svg>Send first request</button>",
+      "css": ".ds-guided{font-family:\"Public Sans Variable\",sans-serif;border:0;border-radius:5px;cursor:pointer;transition:background .15s ease;background:#e6eefb;color:#164e9e;font-size:11px;padding:10px 13px;display:flex;gap:7px;align-items:center;font-weight:600;}.ds-guided:hover{background:#d3e2fa;}.ds-guided:disabled{cursor:wait;opacity:.5}.ds-focus:focus-visible{outline:3px solid #3479df;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-guided{transition:none}}"
+    },
+    {
+      "name": "Text Action",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "Read or close an inspector without competing with submission.",
+      "html": "<button class=\"ds-text ds-focus\">Read now</button>",
+      "css": ".ds-text{font-family:\"Public Sans Variable\",sans-serif;border:0;border-radius:5px;cursor:pointer;transition:background .15s ease;background:transparent;color:var(--blue,#1859c9);font-size:10px;display:flex;gap:5px;align-items:center;padding:4px 0;}.ds-text:hover{background:transparent;text-decoration:underline;}.ds-text:disabled{cursor:wait;opacity:.5}.ds-focus:focus-visible{outline:3px solid #3479df;outline-offset:3px}@media(prefers-reduced-motion:reduce){.ds-text{transition:none}}"
+    },
+    {
+      "name": "Cell Name Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "A labeled editable value; selects use the same field treatment.",
+      "html": "<label class=\"ds-label\">Cell name<input class=\"ds-field ds-focus\" value=\"counter\" maxlength=\"64\" /></label>",
+      "css": ".ds-label{font-family:\"Public Sans Variable\",sans-serif;display:flex;flex-direction:column;gap:7px;font-size:10px;font-weight:550;color:#53677e}.ds-field{font-family:\"Public Sans Variable\",sans-serif;border:1px solid #ccd7e3;background:#fff;color:#2c425c;border-radius:5px;padding:10px;min-width:0;width:100%;font-size:11px;height:37px;caret-color:var(--blue,#1859c9)}.ds-field:hover{border-color:#7b9ec9}.ds-field:disabled{background:#edf1f5}.ds-focus:focus-visible{outline:3px solid #3479df;outline-offset:3px}@media(max-width:650px){.ds-field{font-size:12px}}"
+    },
+    {
+      "name": "Experiment Navigation",
+      "kind": "nav",
+      "refersTo": "navigation-selected",
+      "description": "Numbered experiment choices with an explicit current selection.",
+      "html": "<nav aria-label=\"Experiments\"><button class=\"ds-nav ds-selected ds-focus\" aria-current=\"page\"><span class=\"ds-number\">01</span><span class=\"ds-copy\"><strong>One cell, any node</strong><small>Ownership &amp; routing</small></span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></button></nav>",
+      "css": ".ds-nav{font-family:\"Public Sans Variable\",sans-serif;border:0;border-radius:5px;cursor:pointer;transition:background .15s ease;display:flex;align-items:center;gap:11px;text-align:left;padding:14px 10px;background:transparent;color:var(--muted,#5b6c7f);width:100%}.ds-nav:hover{background:#e0e9f3}.ds-nav.ds-selected{background:#dfebfc;color:#154b9d}.ds-number{font-family:var(--mono,ui-monospace,SFMono-Regular,Menlo,monospace);font-size:11px;align-self:flex-start;padding-top:3px}.ds-copy{flex:1}.ds-copy strong{display:block;font-size:12px;font-weight:600;line-height:1.4}.ds-copy small{display:block;font-size:10px;margin-top:4px;color:var(--muted,#5b6c7f)}.ds-focus:focus-visible{outline:3px solid #3479df;outline-offset:3px}@media(max-width:900px){.ds-nav{min-width:158px;max-width:190px;padding:9px}.ds-nav svg{display:none}.ds-copy strong{font-size:11px}.ds-copy small{font-size:9px}}@media(prefers-reduced-motion:reduce){.ds-nav{transition:none}}"
+    },
+    {
+      "name": "Evidence Count",
+      "kind": "chip",
+      "refersTo": "count-badge",
+      "description": "Informational count beside an evidence label.",
+      "html": "<span class=\"ds-count\" aria-label=\"117 submissions\">117</span>",
+      "css": ".ds-count{font-family:\"Public Sans Variable\",sans-serif;font-size:9px;background:#eaf0f7;padding:2px 5px;border-radius:4px;color:#526b89}"
+    },
+    {
+      "name": "Apparatus Container",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "A flat, ruled white panel for the topology, workbench or evidence.",
+      "html": "<section class=\"ds-panel\"><h2>Live topology</h2><p>Three node bays share one bucket.</p></section>",
+      "css": ".ds-panel{font-family:\"Public Sans Variable\",sans-serif;background:#fff;border:1px solid var(--line,#d8e0e8);border-radius:10px;overflow:hidden;color:#243446}.ds-panel h2{margin:0;padding:18px 20px 14px;font-size:13px;font-weight:650}.ds-panel p{margin:0;border-top:1px solid #ecf0f4;background:#f9fbfd;padding:12px 20px;font-size:10px}"
+    },
+    {
+      "name": "Owned Node Bay",
+      "kind": "custom",
+      "refersTo": "node",
+      "description": "An ownership-marked node with health and operational controls.",
+      "html": "<section class=\"ds-node ds-owned\"><div class=\"ds-node-head\"><h3>node-a</h3><span class=\"ds-health\"><i></i>Ready</span></div><dl class=\"ds-stats\"><div><dt>Owned</dt><dd>1</dd></div><div><dt>Resident</dt><dd>1</dd></div><div><dt>Memory</dt><dd>39.0 MB</dd></div></dl><div class=\"ds-cell\"><i></i><strong>counter</strong><span>epoch 3</span></div><div class=\"ds-node-controls\"><button class=\"ds-focus\">Stop gracefully</button><button class=\"ds-danger ds-focus\">Crash</button><details><summary class=\"ds-focus\">State</summary><pre>{\"ready\":true}</pre></details></div></section>",
+      "css": ".ds-node{font-family:\"Public Sans Variable\",sans-serif;border:1px solid #d4dee9;border-radius:7px;position:relative;min-width:0;background:#fff;color:#243446}.ds-node.ds-owned{border-color:var(--blue,#1859c9);background:#f6f9ff}.ds-node-head{display:flex;align-items:center;justify-content:space-between;padding:13px 13px 11px;gap:6px}.ds-node h3{margin:0;font-size:12px;font-family:var(--mono,ui-monospace,SFMono-Regular,Menlo,monospace);font-weight:600}.ds-health{display:flex;gap:5px;align-items:center;font-size:9px;color:var(--green,#176544)}.ds-health i{width:6px;height:6px;border-radius:50%;background:currentColor}.ds-stats{display:flex;gap:16px;margin:0;padding:0 13px 12px}.ds-stats dt{font-size:9px;color:var(--muted,#5b6c7f);margin-bottom:5px}.ds-stats dd{margin:0;font-size:13px;font-family:var(--mono,ui-monospace,SFMono-Regular,Menlo,monospace);font-weight:500}.ds-cell{border-top:1px solid #e4eaf2;border-bottom:1px solid #e4eaf2;min-height:37px;padding:10px 13px;font-size:9px;display:flex;gap:7px;align-items:center}.ds-cell i{background:var(--blue,#1859c9);width:6px;height:6px}.ds-cell strong{color:var(--blue,#1859c9)}.ds-cell span{margin-left:auto}.ds-node-controls{display:flex;padding:8px 10px;gap:7px;align-items:center;flex-wrap:wrap}.ds-node-controls button{font-family:\"Public Sans Variable\",sans-serif;border:0;border-radius:5px;cursor:pointer;transition:background .15s ease;padding:4px 3px;background:transparent;font-size:9px;color:var(--muted,#5b6c7f)}.ds-node-controls button:hover{background:#dce7f4}.ds-node-controls .ds-danger{color:var(--red,#a42f38)}.ds-node-controls details{margin-left:auto;font-size:9px;color:var(--muted,#5b6c7f)}.ds-node-controls summary{cursor:pointer}.ds-node-controls details[open]{width:100%;margin-left:0}.ds-node-controls pre{font-family:var(--mono,ui-monospace,SFMono-Regular,Menlo,monospace);white-space:pre-wrap}.ds-focus:focus-visible{outline:3px solid #3479df;outline-offset:3px}@media(max-width:650px){.ds-node-controls button,.ds-node-controls details{font-size:11px}.ds-node-controls button,.ds-node-controls summary{min-height:44px;padding:12px 8px}.ds-health,.ds-cell{font-size:10px}}@media(prefers-reduced-motion:reduce){.ds-node-controls button{transition:none}}"
+    },
+    {
+      "name": "Shared Bucket Strip",
+      "kind": "custom",
+      "refersTo": "storage-strip",
+      "description": "The shared storage identity and health beneath the connectivity bus.",
+      "html": "<div class=\"ds-bucket\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"/><path d=\"M3 5v14a9 3 0 0 0 18 0V5\"/><path d=\"M3 12a9 3 0 0 0 18 0\"/></svg><div><strong>MinIO</strong><span>Shared bucket <code>celld-lab</code></span></div><span class=\"ds-purpose\">Ownership records \u00b7 node leases \u00b7 durable logs &amp; snapshots</span><span class=\"ds-bucket-health\">94 objects</span></div>",
+      "css": ".ds-bucket{font-family:\"Public Sans Variable\",sans-serif;background:#edf2f8;border-radius:5px;padding:12px 15px;display:flex;align-items:center;gap:12px;color:#46617f}.ds-bucket>div strong{font-size:12px;font-weight:650;display:block;color:#294562}.ds-bucket>div span{display:block;font-size:9px;margin-top:4px}.ds-bucket code{font-family:var(--mono,ui-monospace,SFMono-Regular,Menlo,monospace);font-size:.91em}.ds-purpose{font-size:9px;margin-left:18px}.ds-bucket-health{margin-left:auto;font-size:9px;color:var(--green,#176544)}@media(max-width:650px){.ds-bucket{padding:12px;gap:10px;flex-wrap:wrap}.ds-purpose{order:4;margin-left:0;font-size:9px;line-height:1.6;width:100%}}"
+    },
+    {
+      "name": "Evidence Tabs",
+      "kind": "nav",
+      "description": "Switch between request and bucket evidence with an underlined selected state.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\" aria-label=\"Evidence type\"><button class=\"ds-focus\" role=\"tab\" aria-selected=\"true\">Request timeline <span>117</span></button><button class=\"ds-focus\" role=\"tab\" aria-selected=\"false\">Bucket explorer <span>94</span></button></div>",
+      "css": ".ds-tabs{display:flex;gap:21px}.ds-tabs button{font-family:\"Public Sans Variable\",sans-serif;border:0;border-radius:5px;cursor:pointer;transition:background .15s ease;background:transparent;border-radius:0;padding:16px 0 13px;border-bottom:2px solid transparent;color:var(--muted,#5b6c7f);font-size:11px;font-weight:550;display:flex;align-items:center;gap:7px}.ds-tabs button:hover{background:#e0e9f3}.ds-tabs button[aria-selected=\"true\"]{color:var(--blue,#1859c9);border-bottom-color:var(--blue,#1859c9)}.ds-tabs button>span{font-size:9px;background:#eaf0f7;padding:2px 5px;border-radius:4px;color:#526b89}.ds-focus:focus-visible{outline:3px solid #3479df;outline-offset:3px}@media(max-width:650px){.ds-tabs{gap:18px}}@media(prefers-reduced-motion:reduce){.ds-tabs button{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Network Switchboard",
+    "overview": "A cool, ruled work surface presents an apparatus that can be operated and inspected. Graphite text, cobalt selections and restrained status colors keep attention on relationships and measured outcomes. This name and atmosphere describe the implemented direction; they were inferred from the brief, not separately confirmed as a brand preference.\n\nDensity comes from aligned compartments, short instructions and compact tables. The visual system supports the product commitment to real, observable mechanisms. Page composition and experiment sequencing remain in the surface contract.",
+    "keyCharacteristics": [
+      "Cool surfaces with thin structural rules.",
+      "Cobalt actions and explicit ownership states.",
+      "Public Sans controls with monospace evidence.",
+      "Flat compartments and orthogonal connectivity.",
+      "Responsive apparatus with persistent shared connections."
+    ],
+    "rules": [
+      {
+        "name": "The State Has a Name Rule",
+        "body": "Pair status color with text or a distinct marker; health, ownership and ingress carry different meanings.",
+        "section": "colors"
+      },
+      {
+        "name": "The Evidence Voice Rule",
+        "body": "Use monospace for measured values and technical identifiers; keep instructions and action names in Public Sans.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shared Connection Rule",
+        "body": "Reflow the apparatus without losing the common connection between node bays and storage.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Apparatus Rule",
+        "body": "Separate surfaces with tone and rules; reserve outlines and washes for meaningful states.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use color with named states and observable evidence.",
+      "Do preserve shared connectivity when topology reflows.",
+      "Do keep technical values in monospace and explanations in Public Sans.",
+      "Do use tonal compartments and thin rules for depth.",
+      "Do retain visible keyboard focus and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't represent configured links as measured replication traffic.",
+      "Don't conflate request ingress with observed ownership.",
+      "Don't replace responsive table scrolling with clipped evidence.",
+      "Don't propagate the current tiny metadata sizes into future body text."
+    ]
+  }
+}

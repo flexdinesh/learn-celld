@@ -1,0 +1,23 @@
+{
+  "name": "celld-lab",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @lab/api --filter @lab/web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck && tsc -p tsconfig.json",
+    "test": "pnpm --filter @lab/api test",
+    "lab:up": "docker compose up -d --build --wait",
+    "lab:down": "docker compose down",
+    "lab:logs": "docker compose logs -f",
+    "test:integration": "node --experimental-strip-types scripts/integration.ts",
+    "test:ui": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.18.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
